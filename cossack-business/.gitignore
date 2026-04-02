@@ -1,0 +1,15 @@
+node_modules/
+target/
+test-ledger/
+.DS_Store
+*.swp
+*.swo
+*~
+.env
+.env.local
+dist/
+build/
+*.log
+.anchor/
+.cargo/
+

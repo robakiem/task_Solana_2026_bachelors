@@ -1,0 +1,34 @@
+[toolchain]
+anchor_version = "0.32.1"
+solana_version = "3.1.12"
+
+[features]
+resolution = true
+skip-lint = false
+
+[programs.localnet]
+crafting = "F363uvEn2XmANvZW4Lf2Wq7XZ63ic11qZMLEbnWEB9ik"
+item_nft = "7bgkpNNCBumC1GFLDLbpnwGTkfzFoBv1dia9a7h4noVS"
+magic_token = "69MQNzzxdev4Pxo1KpKh89FNoQ1rSZ2dgEazxb4KwjxM"
+marketplace = "CpemvudwMWJN2TufMwxjAfM5iiLyfFJkDQNvaiyoQgLM"
+resource_manager = "2fDbfUgbEmT3BYD7WnAndvQ6pJLCvVF44F1vdkPjevyG"
+search = "97CsecsErAgRJsbLVaRitisJCYbenpUGAkaJTdDeGdn8"
+
+# Devnet Program IDs (deployed April 2, 2026)
+[programs.devnet]
+crafting = "EAB454z1zyfwBUfM85eLVcvjX6SGmibUfvnoomCvz8Ht"
+item_nft = "4ksJT2ov85k1URtHWgYLB9BLe18uBLKui3tiByt6B5mu"
+magic_token = "57FsKhH1PB2BBHJ7yrpPaVtZdyWAvJ7bT8TUSGD52t5F"
+marketplace = "AzvEJ1m5hVgPm6QPa5dEQdebEABV64uB5C9G7Mk4nRV"
+resource_manager = "DHqo9pDCkPW9a7P5U6k8stE7ENpdtuGb6voTxTGaWG1r"
+search = "7ZrqAmexCX1VCYt4MnShse7aWvrfs8EP7nqnGFC68eY3"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "devnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 \"tests/**/*.ts\""
